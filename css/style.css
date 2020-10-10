@@ -1,0 +1,270 @@
+:root {
+    --verde: #00b30c;
+    --gris: #676767;
+    --gris1: #353537;
+    --gris2: #e1e1eb;
+    --gris3: #777777;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+.titulo {
+	font-weight: 700 !important;
+}
+
+
+
+/* Scroll Header */
+
+.header-scroll {
+	opacity: 0;
+	margin-top: -300px;
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	z-index: 100;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	transition: all .5s ease;
+}
+
+.header-scroll.activo {
+	margin-top: 0;
+	opacity: 1;
+}
+
+.header-scroll .nav-link {
+	color: var(--gris3) !important;
+}
+
+.header-scroll .btn-outline-success {
+	color: #00B30C !important;
+}
+
+.header-scroll .btn-outline-success:hover {
+	color: white !important;
+}
+
+
+/* Header */
+
+.header {
+	background-image: url('../img/hero.jpg');
+	background-size: cover;
+	min-height: 30rem;
+}
+
+.header .nav-link,
+.header .nav-link:hover {
+	color: white;
+}
+
+.header .btn-outline-light:hover {
+	color: black !important;
+}
+
+.buscador {
+	min-height: 25rem;
+}
+
+.btn-success {
+	background-color: var(--verde) !important;
+}
+
+/* Categorias */
+
+.categoria { 
+	padding-bottom: 6.3rem;
+	overflow: hidden;
+	height: 18.8rem;
+ }
+
+.categoria h3::before {
+	content: '';
+	display: block;
+	margin: 0 auto 20px auto;
+	height: 3px;
+	width: 60px;
+	background-color: var(--green);
+	transition: all .3s ease;
+}
+
+.categoria:hover h3::before {
+	width: 180px;
+}
+
+.categoria h3 {
+	font-family: arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+.categoria p {
+	color: #999;
+	opacity: 0;
+	padding-top: 30px;
+	transition: all .3s ease;
+}
+
+.categoria:hover p {
+	opacity: 1;
+	padding-top: 10px;
+}
+
+/* PRO */
+
+.bg-dark {
+	background-color: var(--gris1) !important;
+}
+
+.nuevo-pro .row {
+	min-height: 25rem;
+}
+
+/* Primeros Pasos */
+
+.primeros-pasos .descripcion {
+	flex: 1 0 50%;
+}
+
+@media (min-width: 768px) {
+	.primeros-pasos .descripcion {
+		flex: 0 0 calc(20% - .8rem);	
+	}
+}
+
+.primeros-pasos .logotipo {
+	background-image: url('../img/servicio1.png');
+}
+
+.primeros-pasos .social-media {
+	background-image: url('../img/servicio2.png');
+}
+
+.primeros-pasos .audio {
+	background-image: url('../img/servicio3.png');
+}
+
+.primeros-pasos .traducciones {
+	background-image: url('../img/servicio4.png');
+}
+
+.primeros-pasos .wordpress {
+	background-image: url('../img/servicio5.png');
+}
+
+.primeros-pasos .descripcion {
+	height: 20rem;
+	background-size: cover;
+}
+
+.primeros-pasos span {
+	font-weight: 700;
+}
+
+/*  Beneficios */
+
+.beneficios .row {
+	min-height: 20rem;
+}
+
+.beneficio h3 {
+	font-weight: 300;
+}
+
+.beneficio span {	
+	font-weight: 700;
+}
+
+/* Testimoniales */
+
+.testimoniales {
+	background-color: var(--gris2) !important;
+}
+
+.testimoniales .carousel-item blockquote {
+	font-style: italic;
+	font-size: 1.8rem;
+	color: var(--gris) !important;
+}
+
+.testimoniales .carousel-item p {
+	font-size: .8rem;
+}
+
+/* Guías */
+
+.guias .card {
+	height: 100%;
+}
+
+.guias .card-title {
+	font-size: 1.2rem;
+}
+
+/* Footer */
+
+.footer {
+	border-top: 1px solid var(--gris2);
+}
+
+.footer .titulo {
+	color: var(--gris3);
+	font-size: 1.2rem;
+}
+
+.footer .nav-link {
+	color: var(--gris3);
+	padding: .5rem 0;
+	font-size: 1rem;
+}
+
+.footer .container-fluid {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+}
+
+.footer .nav-footer {
+	/* margin-bottom: 1.3rem; */
+	flex: 0 0 calc(50% - 1rem);
+	padding: 1rem; 
+}
+
+@media (min-width: 768px) {
+	.footer .nav-footer {
+		flex: 0 0 calc(33.3% - 1rem);
+	}
+} 
+
+@media (min-width: 992px) {
+	.footer .nav-footer {
+		flex: 0 0 calc(20% - 1rem);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
